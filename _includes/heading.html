@@ -1,0 +1,21 @@
+{% assign heading = include.heading %} {% assign description =
+include.description %} {% assign align = include.align %} {% assign date =
+include.date %}
+
+<div
+  class="py-6 bg-gray-800 h-96 md:text-center mx-auto flex items-center brightness-[30]"
+  style="background-image: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url({{ '/assets/images/bg.jpg' | relative_url }});
+  background-position: center;
+  background-size: cover;"
+>
+  <div class="w-full space-y-2">
+    <h1
+      class="heading text-center text-4xl font-sans font-semibold md:leading-tight"
+    >
+      {{ heading }}
+    </h1>
+    {% if page.description %}
+    <h2 class="text-lg text-white font-light">{{page.description}}</h2>
+    {% endif %}
+  </div>
+</div>

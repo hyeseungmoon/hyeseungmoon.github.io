@@ -1,0 +1,19 @@
+---
+---
+
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@import "assets/css/custom.css";
+@import "assets/css/syntax/monokai";
+
+@layer components {
+  .heading {
+    @apply text-white;
+    font-weight: inherit;
+    font-style: normal;
+  }
+  .logo {
+  }
+}
